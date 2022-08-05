@@ -5,6 +5,7 @@
 * {
     margin:0;
     font-family: var(--main-font);
+    box-sizing: border-box;
 }
 body {
     background-color: #ECEEF2;

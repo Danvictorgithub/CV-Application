@@ -1,0 +1,31 @@
+.paper {
+    height: 297mm;
+    width: 210mm;
+    margin: 0 auto 24px auto;
+    padding:1in;
+    background-color:white;
+}
+.personalInfo h2{
+    text-align: center;
+    margin-bottom:6px;
+}
+.personalInfoBot {
+    display:flex;
+    justify-content: space-around;
+}
+
+.paper h3{
+    margin-top: 18px;
+    margin-bottom:18px;
+}
+.educationInfo h4{
+    margin-top: 8px;
+}
+.schoolData {
+    padding: 6px;
+    display:flex;
+    justify-content: space-between;
+}
+.sDetail {
+    margin-bottom:6px;
+}

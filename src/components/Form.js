@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Form.css';
-function Form() {
+function Form(props) {
+    const {firstName, lastName, email, number, residence} = props;
     return (
         <div className="form">
             <div className="personalInfo info" >
@@ -10,27 +11,27 @@ function Form() {
                     <div className="nameForm">
                         <div className="pForm">
                             <label htmlFor='fName'>First Name: </label>
-                            <input type='text' id="fName"></input>
+                            <input onChange={firstName} type='text' id="fName"></input>
                         </div>
                         <div className="pForm">
                             <label htmlFor='lName'>Last Name: </label>
-                            <input type='text' id="lName" className="last"></input>
+                            <input onChange={lastName} type='text' id="lName" className="last"></input>
                         </div>
                     </div>
                     <div className="nameForm">
                         <div className="pForm">
                             <label htmlFor='email'>Email Address: </label>
-                            <input type='text' id="email"></input>
+                            <input onChange={email} type='text' id="email"></input>
                         </div>
                         <div className="pForm">
                             <label htmlFor='pNumber'>Phone Number: </label>
-                            <input type='number' id="pNumber" className="last"></input>
+                            <input onChange={number} type='number' id="pNumber" className="last"></input>
                         </div>
                     </div>
                     <div className="nameForm">
                         <div className="pForm special">
                             <label htmlFor='residence'>Residence: </label>
-                            <input type='text' id="residence"></input>
+                            <input onChange={residence} type='text' id="residence"></input>
                         </div>
                     </div>
                 </form>
